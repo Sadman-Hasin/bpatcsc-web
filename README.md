@@ -1,3 +1,3 @@
 ## bpatcsc-web
 
-An under-construction wrapper of the official website (https://bpatcsc.org/) of BPATC School & College with some additional features and many more
+An under-construction wrapper of the official website of BPATC School & College (https://bpatcsc.org/) with some additional features and many more.

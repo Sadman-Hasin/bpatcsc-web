@@ -1,0 +1,140 @@
+* { box-sizing:  border-box; }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #888; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+html { scroll-behavior: smooth; }
+
+body
+{
+	font-family: arial, roboto;
+	margin: 0;
+	color: #555;
+	background-color: #fff;
+	line-height: 1.4em;
+}
+
+h1, h2, h3 { font-weight: normal; }
+
+#navbar
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #444;
+	overflow: hidden;
+	z-index: 100;
+}
+
+#navbar a
+{
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+#navbar a:hover button:not(#navbar .active:hover button)
+{
+	background-color: rgba(255,255,255,0.1);
+}
+
+#navbar button
+{
+	padding: 15px 18px;
+	background-color: transparent;
+	border: none;
+	transition: 0.2s;
+	color: white;
+	cursor: pointer;
+}
+
+#navbar .active button
+{
+	background-color: rgb(0,126,152);
+}
+
+#header
+{
+	padding: 15px 30px;
+	overflow: auto;
+	position: relative;
+}
+
+.header-container
+{
+	float: left;
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+}
+
+#header .title
+{
+	font-size: 22px;
+	margin: 10px;
+}
+
+.logo
+{
+	height: 64px;
+	width: auto;
+}
+
+#slide
+{
+	position: relative;
+	width: 100%;
+	overflow: auto;
+	z-index: -1;
+	height: 450px;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
+}
+
+#slide .content
+{
+	background-image: linear-gradient(180deg, rgba(0,0,0,8), rgba(0,0,0,0.5));
+	height: 100%;
+	padding: 6%;
+}
+
+#mission-card
+{
+	width: 70%;
+	margin: auto;
+	margin-top: -9%;
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+	background-color: white;
+	border-radius: 10px;
+	padding: 30px;
+	display: table;
+}
+
+#mission-card .card
+{
+	padding: 30px;
+	display: table-cell;
+	transition: 0.3s;
+	border-radius: 8px;
+	user-select: none;
+	font-size: 14px;
+}
+
+#mission-card .card i /*For the font-awesome icons*/
+{
+	display: block;
+	margin: 20px;
+	font-size: 36px;
+}
+
+#mission-card .card:hover
+{
+	background-image: linear-gradient(45deg,rgb(48,52,124),rgb(0,126,152));
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	color: white;
+}

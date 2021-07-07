@@ -10,7 +10,11 @@ import HeaderAccount from './headerAccount';
 
 const Appbar = () => {
 	return (
-		<AppBar position="static">
+		<AppBar
+			position="static"
+			elevation={2}
+			style={{marginBottom: "20px"}}
+		>
 			<Toolbar>
 				<HeaderLogo/>
 				<HeaderTitle/>

@@ -9,13 +9,15 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     cursor: "default",
     [theme.breakpoints.down("xs")]: {
-	  	fontSize: "14px",
+    	marginTop: "2px",
+	  	fontSize: "16px",
 	  },   
   },
   subtitle : {
-  	marginTop: "-2px",
+  	display: "block",
+  	marginTop: "-1px",
   	[theme.breakpoints.down("xs")]: {
-	  	fontSize: "12px",
+	  	fontSize: "14px",
 	  },
   },
 }));
@@ -26,7 +28,7 @@ const HeaderTitle = () => {
 	return (
 		<Typography variant="h5" className={classes.title}>
 			BPATC School & College
-			<Typography variant="subtitle1" className={classes.subtitle}>
+			<Typography component="span" variant="subtitle1" className={classes.subtitle}>
 				Savar, Dhaka
 			</Typography>
 		</Typography>

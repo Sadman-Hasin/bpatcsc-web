@@ -1,7 +1,12 @@
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import {
+  createMuiTheme,
+  ThemeProvider,
+} from '@material-ui/core/styles';
 
 import './App.css';
 import Appbar from './components/appbar';
+import Views from './components/views';
+
 
 const theme = createMuiTheme({
   palette: {
@@ -20,6 +25,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Appbar/>
+      <Views/>
     </ThemeProvider>
   );
 }

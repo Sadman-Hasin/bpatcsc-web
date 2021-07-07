@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
 import {
-	AppBar,
-	Toolbar,
 	Typography,
 	IconButton,
 	Avatar,
@@ -53,6 +51,7 @@ const HeaderAccount = () => {
 		<Menu
 	    id="account"
 	    className={classes.accountMenuBox}
+	    elevation={1}
 	    anchorEl={accountMenu}
 	    keepMounted
 	    open={Boolean(accountMenu)}
